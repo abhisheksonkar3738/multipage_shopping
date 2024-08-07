@@ -1,0 +1,2349 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap");
+* {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#uppernavbar {
+  padding: 10px;
+  height: 30px;
+  background-color: rgb(241, 69, 7);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 426px) {
+  #uppernavbar {
+    font-size: 15px;
+  }
+}
+
+#label20 i {
+  position: absolute;
+  top: 20px;
+  z-index: 100000;
+  margin-left: 1300px;
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 1026px) {
+  #label20 i {
+    position: absolute;
+    top: 10px;
+    z-index: 100000;
+    margin-left: 730px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 770px) {
+  #label20 i {
+    position: absolute;
+    top: 10px;
+    z-index: 1000;
+    margin-left: 730px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  #label20 i {
+    position: absolute;
+    top: 10px;
+    z-index: 1000;
+    margin-left: 400px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #label20 i {
+    position: absolute;
+    top: 10px;
+    z-index: 1000;
+    margin-left: 340px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 321px) {
+  #label20 i {
+    position: absolute;
+    top: 12px;
+    z-index: 1000;
+    margin-left: 304px;
+    font-size: 17px;
+  }
+}
+
+#input10:checked ~ #uppernavbar {
+  display: none;
+}
+
+#input10:checked ~ #label20 {
+  display: none;
+}
+
+#midnavbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 15px;
+  font-size: 20px;
+  overflow-x: hidden;
+}
+#midnavbar .insta span a {
+  text-decoration: none;
+  font-size: 20px;
+}
+@media screen and (max-width: 1026px) {
+  #midnavbar .insta span a {
+    font-size: 15px !important;
+  }
+}
+#midnavbar .insta span a i {
+  font-size: 20px;
+}
+@media screen and (max-width: 1026px) {
+  #midnavbar .insta span a i {
+    font-size: 15px;
+  }
+}
+#midnavbar .fb span a {
+  text-decoration: none;
+  font-size: 20px;
+}
+@media screen and (max-width: 1026px) {
+  #midnavbar .fb span a {
+    font-size: 15px;
+  }
+}
+#midnavbar .fb span a i {
+  font-size: 20px;
+}
+@media screen and (max-width: 1026px) {
+  #midnavbar .fb span a i {
+    font-size: 15px;
+  }
+}
+#midnavbar .free a {
+  text-decoration: none;
+  font-size: 20px;
+}
+@media screen and (max-width: 1026px) {
+  #midnavbar .free a {
+    font-size: 15px;
+  }
+}
+#midnavbar .state a {
+  font-size: 20px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1026px) {
+  #midnavbar .state a {
+    font-size: 15px;
+  }
+}
+#midnavbar .english a {
+  font-size: 20px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1026px) {
+  #midnavbar .english a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 770px) {
+  #midnavbar {
+    display: none;
+  }
+}
+
+.line {
+  background-color: grey;
+  height: 1px;
+}
+
+.slidebar {
+  background-color: coral;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 140px;
+  left: -500px;
+  z-index: 10000000;
+  display: none;
+}
+.slidebar ul {
+  list-style: none;
+}
+.slidebar ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  margin: 20px;
+  padding: 20px;
+}
+@media screen and (max-width: 770px) {
+  .slidebar {
+    display: block;
+  }
+}
+
+label {
+  display: none;
+  font-size: 25px;
+}
+@media screen and (max-width: 770px) {
+  label {
+    display: block;
+    margin-left: -110px;
+  }
+}
+@media screen and (max-width: 426px) {
+  label {
+    display: block;
+    margin-left: -80px;
+  }
+}
+@media screen and (max-width: 376px) {
+  label {
+    display: block;
+    margin-left: -80px;
+  }
+}
+@media screen and (max-width: 321px) {
+  label {
+    display: block;
+    margin-left: -70px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #abhi:checked ~ .slidebar {
+    left: 0px;
+    transition: 1.2s;
+    cursor: pointer;
+  }
+}
+
+#mainnavbar {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.minihome {
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  display: none;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 50vh;
+  background-color: coral;
+  z-index: 1000;
+}
+.minihome .miniho1 {
+  padding: 20px;
+}
+.minihome .miniho1 div a {
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px;
+}
+.minihome .miniho1 div a:hover {
+  border-bottom: 2px solid black;
+}
+
+.mainhome:hover a {
+  border-bottom: 2px solid black;
+  transition: 1.2s;
+  transition-duration: inherit;
+}
+
+.mainhome:hover + .minihome {
+  display: grid;
+  transition: 1.8s;
+}
+
+.minishop {
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  display: none;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 50vh;
+  background-color: coral;
+  z-index: 1000;
+}
+.minishop .minishop1 {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.minishop .minishop1 div a {
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px;
+}
+.minishop .minishop1 div a:hover {
+  border-bottom: 2px solid black;
+}
+.minishop .minishop2 img {
+  width: 300px;
+  margin-top: 50px;
+}
+
+.mainshop:hover a {
+  border-bottom: 2px solid black;
+}
+
+.mainshop:hover + .minishop {
+  display: grid;
+  transition: 1.8s;
+}
+
+.Productshop {
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  display: none;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 50vh;
+  background-color: coral;
+  z-index: 1000;
+}
+.Productshop .productshop1 {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.Productshop .productshop1 div a {
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px;
+}
+.Productshop .productshop1 div a:hover {
+  border-bottom: 2px solid black;
+}
+.Productshop .Productshop2 img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.mainproduct:hover a {
+  border-bottom: 2px solid black;
+}
+
+.mainproduct:hover + .Productshop {
+  display: grid;
+  transition: 1.8s;
+}
+
+.pageshop {
+  position: absolute;
+  top: 170px;
+  left: 410px;
+  display: none;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+  width: 10vw;
+  height: 50vh;
+  background-color: coral;
+  z-index: 1000;
+}
+.pageshop .pageshop1 {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.pageshop .pageshop1 div a {
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px;
+}
+.pageshop .pageshop1 div a:hover {
+  border-bottom: 2px solid black;
+}
+
+.mainpage:hover a {
+  border-bottom: 2px solid black;
+}
+
+.mainpage:hover + .pageshop {
+  display: grid;
+  transition: 1.8s;
+}
+
+.forkitshop {
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  display: none;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 50vh;
+  background-color: coral;
+  z-index: 1000;
+}
+.forkitshop .forkitshop1 {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.forkitshop .forkitshop1 div a {
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px;
+}
+.forkitshop .forkitshop1 div a:hover {
+  border-bottom: 2px solid black;
+}
+.forkitshop .forkitshop2 img {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.mainforkit:hover a {
+  border-bottom: 2px solid black;
+}
+
+.mainforkit:hover + .forkitshop {
+  display: grid;
+  transition: 1.8s;
+}
+
+.undermainnavbar {
+  display: flex;
+  list-style: none;
+}
+.undermainnavbar li a {
+  text-decoration: none;
+  margin: 15px;
+  font-size: 20px;
+  width: 50px;
+}
+@media screen and (max-width: 770px) {
+  .undermainnavbar li a {
+    display: none;
+  }
+}
+
+.minimogimg img {
+  width: 180px;
+}
+@media screen and (max-width: 321px) {
+  .minimogimg img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .minimogimg img {
+    width: 100px;
+    margin-left: -30px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .minimogimg {
+    margin-left: -20px;
+  }
+}
+
+.iconmainnavbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.iconmainnavbar li a i {
+  margin: 15px;
+  font-size: 20px;
+}
+@media screen and (max-width: 770px) {
+  .iconmainnavbar .loginnone {
+    display: none;
+  }
+}
+@media screen and (max-width: 770px) {
+  .iconmainnavbar .wistnone {
+    display: none;
+  }
+}
+
+.fixminimog1 {
+  overflow-x: hidden;
+  font-size: 20px;
+  background-color: rgb(232, 70, 11);
+  color: white;
+  padding: 10px;
+  width: 220px;
+  border-radius: 10px;
+  position: fixed;
+  top: 400px;
+  z-index: 1000;
+  left: -70px;
+  rotate: 90deg;
+  overflow-x: hidden;
+}
+.fixminimog1 span {
+  margin: 5px;
+}
+@media screen and (max-width: 376px) {
+  .fixminimog1 {
+    left: -90px;
+  }
+}
+
+.fixminimog2 {
+  overflow-x: hidden;
+  background-color: rgb(232, 70, 11);
+  width: 50px;
+  padding: 5px;
+  position: fixed;
+  top: 350px;
+  left: 1320px;
+  z-index: 1000;
+}
+@media screen and (max-width: 1026px) {
+  .fixminimog2 {
+    width: 50px;
+    padding: 5px;
+    position: fixed;
+    top: 350px;
+    left: 950px;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width: 770px) {
+  .fixminimog2 {
+    width: 50px;
+    padding: 5px;
+    position: fixed;
+    top: 350px;
+    left: 690px;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width: 426px) {
+  .fixminimog2 {
+    top: 350px;
+    left: 350px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .fixminimog2 {
+    top: 350px;
+    left: 310px;
+    width: 50px;
+    padding: 3px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .fixminimog2 {
+    top: 350px;
+    left: 255px;
+    width: 50px;
+    padding: 3px;
+    font-size: 10px;
+  }
+}
+.fixminimog2 div a i {
+  margin: 5px;
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#mainslide {
+  width: 100%;
+  height: 90vh;
+  background-image: url("https://t4.ftcdn.net/jpg/05/39/99/67/360_F_539996737_T5gJEIEqsGUjMXhrLZt0lDLcrOWsSHlb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  z-index: 0;
+  animation-name: run;
+  animation-duration: 10s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 770px) {
+  #mainslide {
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 426px) {
+  #mainslide {
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 426px) {
+  #mainslide {
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 321px) {
+  #mainslide {
+    width: 100%;
+    height: 20vh;
+  }
+}
+
+@keyframes run {
+  0% {
+    background-image: url("https://t4.ftcdn.net/jpg/05/39/99/67/360_F_539996737_T5gJEIEqsGUjMXhrLZt0lDLcrOWsSHlb.jpg");
+    transition: background-image 4s;
+  }
+  33% {
+    background-image: url("https://t4.ftcdn.net/jpg/05/39/99/67/360_F_539996737_T5gJEIEqsGUjMXhrLZt0lDLcrOWsSHlb.jpg");
+    transition: background-image 4s;
+  }
+  33% {
+    background-image: url("https://t4.ftcdn.net/jpg/04/29/97/39/360_F_429973962_6vMeg6RYgfFvKvBy6A2r8WlpOvFX9746.jpg");
+    transition: background-image 4s;
+  }
+  66% {
+    background-image: url("https://t4.ftcdn.net/jpg/04/29/97/39/360_F_429973962_6vMeg6RYgfFvKvBy6A2r8WlpOvFX9746.jpg");
+    transition: background-image 4s;
+  }
+  66% {
+    background-image: url("https://t3.ftcdn.net/jpg/02/64/92/28/360_F_264922838_NErJEovZiP9MTa49apqL1Vs3f88ZT8Dg.jpg");
+    transition: background-image 4s;
+  }
+  100% {
+    background-image: url("https://t3.ftcdn.net/jpg/02/64/92/28/360_F_264922838_NErJEovZiP9MTa49apqL1Vs3f88ZT8Dg.jpg");
+    transition: background-image 4s;
+    scale: 1;
+  }
+}
+.shp {
+  font-size: 50px;
+  padding: 50px;
+  margin-top: 30px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 426px) {
+  .shp {
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .shp {
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .shp {
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 50px;
+  }
+}
+
+.yare {
+  font-size: 50px;
+  margin-top: 40px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 426px) {
+  .yare {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .yare {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .yare {
+    font-size: 25px;
+  }
+}
+
+#mainbest {
+  overflow-x: hidden;
+  padding: 50px;
+  display: grid;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.minibest1 {
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/22.2a.jpg?v=1708672024&width=990");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.minibest1 .select {
+  border: 2px solid black;
+  position: relative;
+  display: none;
+  top: 240px;
+  left: 50px;
+  padding: 5px;
+  background-color: black;
+}
+.minibest1 .select a {
+  text-decoration: none;
+  color: white;
+}
+.minibest1 .select:hover {
+  background-color: white;
+}
+.minibest1 .select:hover a {
+  color: black;
+}
+.minibest1 .abhisak {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 25px;
+}
+.minibest1 .abhisak i {
+  font-size: 20px;
+  color: black;
+}
+.minibest1 .abhisak:hover {
+  background-color: black;
+}
+.minibest1 .abhisak:hover i {
+  color: white;
+}
+.minibest1 .miniicons2h {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}
+.minibest1 .miniicons2h i {
+  font-size: 20px;
+  color: black;
+}
+.minibest1 .miniicons2h:hover {
+  background-color: black;
+}
+.minibest1 .miniicons2h:hover i {
+  color: white;
+}
+
+.minibest1:hover {
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  overflow-x: hidden;
+}
+.minibest1:hover .select {
+  display: inline;
+}
+.minibest1:hover .abhisak {
+  display: inline-block;
+}
+.minibest1:hover .miniicons2h {
+  display: inline-block;
+}
+
+.minibest2 {
+  width: 200px;
+  margin-left: 8px;
+  overflow-x: hidden;
+}
+
+.crop1 {
+  overflow-x: hidden;
+}
+.crop1 a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.doleri {
+  overflow-x: hidden;
+  font-size: 20px;
+  color: rgba(35, 32, 32, 0.832);
+  margin-top: 5px;
+}
+
+.radio {
+  overflow-x: hidden;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: 60px;
+}
+
+.ra1 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.ra1:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: white;
+  scale: 1.1;
+}
+
+.ra2 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.ra2:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: white;
+  scale: 1.1;
+}
+
+.ra3 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(232, 9, 9);
+  border-radius: 50%;
+}
+
+.ra3:hover {
+  overflow-x: hidden;
+  border: 2px solid rgb(17, 1, 1);
+  background-color: white;
+  scale: 1.1;
+}
+
+.minibest3 {
+  overflow-x: hidden;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/2.1a.jpg?v=1708671658&width=823");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.minibest3 .select {
+  border: 2px solid black;
+  position: relative;
+  display: none;
+  top: 240px;
+  left: 50px;
+  padding: 5px;
+  background-color: black;
+}
+.minibest3 .select a {
+  text-decoration: none;
+  color: white;
+}
+.minibest3 .select:hover {
+  background-color: white;
+}
+.minibest3 .select:hover a {
+  color: black;
+}
+.minibest3 .abhisak {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 25px;
+}
+.minibest3 .abhisak i {
+  font-size: 20px;
+  color: black;
+}
+.minibest3 .abhisak:hover {
+  background-color: black;
+}
+.minibest3 .abhisak:hover i {
+  color: white;
+}
+.minibest3 .miniicons2h {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}
+.minibest3 .miniicons2h i {
+  font-size: 20px;
+  color: black;
+}
+.minibest3 .miniicons2h:hover {
+  background-color: black;
+}
+.minibest3 .miniicons2h:hover i {
+  color: white;
+}
+
+.minibest3:hover {
+  overflow-x: hidden;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/2.1b.jpg?v=1708671658&width=360");
+  transition: 1s;
+}
+.minibest3:hover .select {
+  display: inline;
+}
+.minibest3:hover .abhisak {
+  display: inline-block;
+}
+.minibest3:hover .miniicons2h {
+  display: inline-block;
+}
+
+.minibest2 {
+  overflow-x: hidden;
+  width: 200px;
+  margin-left: 8px;
+}
+
+.crop1 {
+  overflow-x: hidden;
+}
+.crop1 a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.doleri {
+  overflow-x: hidden;
+  font-size: 20px;
+  color: rgba(35, 32, 32, 0.832);
+  margin-top: 5px;
+}
+
+.radio {
+  overflow-x: hidden;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: 60px;
+}
+
+.ra4 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.ra4:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: white;
+  scale: 1.1;
+}
+
+.ra5 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.ra5:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: white;
+  scale: 1.1;
+}
+
+.ra6 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(226, 207, 207);
+  border-radius: 50%;
+}
+
+.ra6:hover {
+  overflow-x: hidden;
+  border: 2px solid rgb(17, 1, 1);
+  background-color: rgb(90, 29, 29);
+  scale: 1.1;
+}
+
+.minibest5 {
+  overflow-x: hidden;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/7.1a.jpg?v=1708671676&width=990");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.minibest5 .select {
+  border: 2px solid black;
+  position: relative;
+  display: none;
+  top: 240px;
+  left: 50px;
+  padding: 5px;
+  background-color: black;
+}
+.minibest5 .select a {
+  text-decoration: none;
+  color: white;
+}
+.minibest5 .select:hover {
+  background-color: white;
+}
+.minibest5 .select:hover a {
+  color: black;
+}
+.minibest5 .abhisak {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 25px;
+}
+.minibest5 .abhisak i {
+  font-size: 20px;
+  color: black;
+}
+.minibest5 .abhisak:hover {
+  background-color: black;
+}
+.minibest5 .abhisak:hover i {
+  color: white;
+}
+.minibest5 .miniicons2h {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}
+.minibest5 .miniicons2h i {
+  font-size: 20px;
+  color: black;
+}
+.minibest5 .miniicons2h:hover {
+  background-color: black;
+}
+.minibest5 .miniicons2h:hover i {
+  color: white;
+}
+
+.minibest5:hover {
+  overflow-x: hidden;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/7.1b.jpg?v=1708671676&width=360");
+  transition: 1s;
+}
+.minibest5:hover .select {
+  display: inline;
+}
+.minibest5:hover .abhisak {
+  display: inline-block;
+}
+.minibest5:hover .miniicons2h {
+  display: inline-block;
+}
+
+.radio {
+  overflow-x: hidden;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 60px;
+}
+
+.ra7 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(60, 228, 22);
+  border-radius: 50%;
+}
+
+.ra7:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  scale: 1.1;
+}
+
+.ra8 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.ra8:hover {
+  overflow-x: hidden;
+  border: 2px solid rgb(16, 19, 17);
+  background-color: white;
+  scale: 1.1;
+}
+
+.ra9 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(232, 9, 9);
+  border-radius: 50%;
+}
+
+.ra9:hover {
+  overflow-x: hidden;
+  border: 2px solid rgb(17, 1, 1);
+  background-color: white;
+  scale: 1.1;
+}
+
+.minibest7 {
+  overflow-x: hidden;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/14.1a_923e2467-dbba-4e11-92ef-6a73309660c0.jpg?v=1709119519&width=990");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.minibest7 .select {
+  border: 2px solid black;
+  position: relative;
+  display: none;
+  top: 240px;
+  left: 50px;
+  padding: 5px;
+  background-color: black;
+}
+.minibest7 .select a {
+  text-decoration: none;
+  color: white;
+}
+.minibest7 .select:hover {
+  background-color: white;
+}
+.minibest7 .select:hover a {
+  color: black;
+}
+.minibest7 .abhisak {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 25px;
+}
+.minibest7 .abhisak i {
+  font-size: 20px;
+  color: black;
+}
+.minibest7 .abhisak:hover {
+  background-color: black;
+}
+.minibest7 .abhisak:hover i {
+  color: white;
+}
+.minibest7 .miniicons2h {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}
+.minibest7 .miniicons2h i {
+  font-size: 20px;
+  color: black;
+}
+.minibest7 .miniicons2h:hover {
+  background-color: black;
+}
+.minibest7 .miniicons2h:hover i {
+  color: white;
+}
+
+.minibest7:hover {
+  overflow-x: hidden;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/14.1b_7dfad9d2-b8fd-49aa-9e87-8c2afc776a68.jpg?v=1709119519&width=360");
+  transition: 1s;
+}
+.minibest7:hover .select {
+  display: inline;
+}
+.minibest7:hover .abhisak {
+  display: inline-block;
+}
+.minibest7:hover .miniicons2h {
+  display: inline-block;
+}
+
+.minibest9 {
+  overflow-x: hidden;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/22.2a.jpg?v=1708672024&width=990");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.minibest9 .select {
+  border: 2px solid black;
+  position: relative;
+  display: none;
+  top: 240px;
+  left: 50px;
+  padding: 5px;
+  background-color: black;
+}
+.minibest9 .select a {
+  text-decoration: none;
+  color: white;
+}
+.minibest9 .select:hover {
+  background-color: white;
+}
+.minibest9 .select:hover a {
+  color: black;
+}
+.minibest9 .abhisak {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 25px;
+}
+.minibest9 .abhisak i {
+  font-size: 20px;
+  color: black;
+}
+.minibest9 .abhisak:hover {
+  background-color: black;
+}
+.minibest9 .abhisak:hover i {
+  color: white;
+}
+.minibest9 .miniicons2h {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}
+.minibest9 .miniicons2h i {
+  font-size: 20px;
+  color: black;
+}
+.minibest9 .miniicons2h:hover {
+  background-color: black;
+}
+.minibest9 .miniicons2h:hover i {
+  color: white;
+}
+
+.minibest9:hover {
+  overflow-x: hidden;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360");
+  transition: 1s;
+}
+.minibest9:hover .select {
+  display: inline;
+}
+.minibest9:hover .abhisak {
+  display: inline-block;
+}
+.minibest9:hover .miniicons2h {
+  display: inline-block;
+}
+
+#mainbest1 {
+  overflow-x: hidden;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.minibes1t {
+  overflow-x: hidden;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/9.1b.jpg?v=1708671749&width=360");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.minibes1t .select {
+  border: 2px solid black;
+  position: relative;
+  display: none;
+  top: 240px;
+  left: 50px;
+  padding: 5px;
+  background-color: black;
+}
+.minibes1t .select a {
+  text-decoration: none;
+  color: white;
+}
+.minibes1t .select:hover {
+  background-color: white;
+}
+.minibes1t .select:hover a {
+  color: black;
+}
+.minibes1t .abhisak {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 25px;
+}
+.minibes1t .abhisak i {
+  font-size: 20px;
+  color: black;
+}
+.minibes1t .abhisak:hover {
+  background-color: black;
+}
+.minibes1t .abhisak:hover i {
+  color: white;
+}
+.minibes1t .miniicons2h {
+  background-color: rgb(231, 213, 213);
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}
+.minibes1t .miniicons2h i {
+  font-size: 20px;
+  color: black;
+}
+.minibes1t .miniicons2h:hover {
+  background-color: black;
+}
+.minibes1t .miniicons2h:hover i {
+  color: white;
+}
+
+.minibes1t:hover {
+  overflow-x: hidden;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+.minibes1t:hover .select {
+  display: inline;
+}
+.minibes1t:hover .abhisak {
+  display: inline-block;
+}
+.minibes1t:hover .miniicons2h {
+  display: inline-block;
+}
+
+.minibes2t {
+  overflow-x: hidden;
+  width: 200px;
+  margin-left: 8px;
+}
+
+.cro1p {
+  overflow-x: hidden;
+}
+.cro1p a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.doleri {
+  overflow-x: hidden;
+  font-size: 20px;
+  color: rgba(35, 32, 32, 0.832);
+  margin-top: 5px;
+}
+
+.radio {
+  overflow-x: hidden;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: 60px;
+}
+
+.r1a {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(11, 241, 249);
+  border-radius: 50%;
+}
+
+.r1a:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: white;
+  scale: 1.1;
+}
+
+.r2a {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.r2a:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: white;
+  scale: 1.1;
+}
+
+.r3a {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(232, 9, 9);
+  border-radius: 50%;
+}
+
+.r3a:hover {
+  overflow-x: hidden;
+  border: 2px solid rgb(17, 1, 1);
+  background-color: white;
+  scale: 1.1;
+}
+
+.minibest3 {
+  overflow-x: hidden;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/11.1a.jpg?v=1708671758&width=990");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.minibest3 .select {
+  border: 2px solid black;
+  position: relative;
+  display: none;
+  top: 240px;
+  left: 50px;
+  padding: 5px;
+  background-color: black;
+}
+.minibest3 .select a {
+  text-decoration: none;
+  color: white;
+}
+.minibest3 .select:hover {
+  background-color: white;
+}
+.minibest3 .select:hover a {
+  color: black;
+}
+
+.minibest3:hover {
+  overflow-x: hidden;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/2.1b.jpg?v=1708671658&width=360");
+  transition: 1s;
+}
+.minibest3:hover .select {
+  display: inline;
+}
+.minibest3:hover .abhisak {
+  display: inline-block;
+}
+.minibest3:hover .miniicons2h {
+  display: inline-block;
+}
+
+.minibest2 {
+  overflow-x: hidden;
+  width: 200px;
+  margin-left: 8px;
+}
+
+.crop1 {
+  overflow-x: hidden;
+}
+.crop1 a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.doleri {
+  overflow-x: hidden;
+  font-size: 20px;
+  color: rgba(35, 32, 32, 0.832);
+  margin-top: 5px;
+}
+
+.radio {
+  overflow-x: hidden;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: 60px;
+}
+
+.r4a {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.r4a:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: white;
+  scale: 1.1;
+}
+
+.r5a {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.r5a:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: white;
+  scale: 1.1;
+}
+
+.r6a {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(226, 207, 207);
+  border-radius: 50%;
+}
+
+.r6a:hover {
+  overflow-x: hidden;
+  border: 2px solid rgb(17, 1, 1);
+  background-color: rgb(90, 29, 29);
+  scale: 1.1;
+}
+
+.minibest5 {
+  overflow-x: hidden;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/7.1a.jpg?v=1708671676&width=990");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.minibest5:hover {
+  overflow-x: hidden;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/7.1b.jpg?v=1708671676&width=360");
+  transition: 1s;
+}
+
+.radio {
+  overflow-x: hidden;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: 60px;
+}
+
+.ra7 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(60, 228, 22);
+  border-radius: 50%;
+}
+
+.ra7:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  scale: 1.1;
+}
+
+.ra8 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.ra8:hover {
+  overflow-x: hidden;
+  border: 2px solid rgb(16, 19, 17);
+  background-color: white;
+  scale: 1.1;
+}
+
+.ra9 {
+  overflow-x: hidden;
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: rgb(232, 9, 9);
+  border-radius: 50%;
+}
+
+.ra9:hover {
+  overflow-x: hidden;
+  border: 2px solid rgb(17, 1, 1);
+  background-color: white;
+  scale: 1.1;
+}
+
+.minibest7 {
+  overflow-x: hidden;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/14.1a_923e2467-dbba-4e11-92ef-6a73309660c0.jpg?v=1709119519&width=990");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.minibest7:hover {
+  overflow-x: hidden;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/14.1b_7dfad9d2-b8fd-49aa-9e87-8c2afc776a68.jpg?v=1709119519&width=360");
+  transition: 1s;
+}
+
+.minibest9 {
+  overflow-x: hidden;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/22.2a.jpg?v=1708672024&width=990");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.minibest9:hover {
+  overflow-x: hidden;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360");
+  transition: 1s;
+}
+
+#ShopAllProducts {
+  overflow-x: hidden;
+  margin-top: 40px;
+  border: 2px solid black;
+  width: 200px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+#ShopAllProducts:hover {
+  overflow-x: hidden;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+#mainpershows {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+@media (max-width: 1025px) {
+  #mainpershows {
+    flex-wrap: wrap;
+  }
+}
+#mainpershows .pershows {
+  overflow-x: hidden;
+}
+#mainpershows .pershows img {
+  width: 700px;
+  height: 710px;
+}
+@media screen and (max-width: 426px) {
+  #mainpershows .pershows img {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.pershows2 img {
+  height: 710px;
+  width: 100%;
+}
+@media screen and (max-width: 426px) {
+  .pershows2 img {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.pershows2:hover {
+  transition: 1s;
+  scale: 1.8;
+}
+
+.hoi1 {
+  overflow: hidden;
+}
+
+.mixand {
+  font-size: 40px;
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 426px) {
+  .mixand {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mixand {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .mixand {
+    font-size: 20px;
+  }
+}
+
+.checkbag1 i {
+  font-size: 40px;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 330px;
+  z-index: 1000;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 770px) {
+  .checkbag1 i {
+    margin-top: 550px;
+    margin-left: 500px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .checkbag1 i {
+    margin-top: 550px;
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .checkbag1 i {
+    margin-top: 550px;
+    margin-left: 270px;
+    font-size: 25px;
+  }
+}
+
+.checkbag2 {
+  overflow-x: hidden;
+}
+.checkbag2 i {
+  font-size: 40px;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 780px;
+  z-index: 1000;
+}
+@media screen and (max-width: 1026px) {
+  .checkbag2 i {
+    font-size: 40px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 840px;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width: 770px) {
+  .checkbag2 i {
+    margin-top: 1230px;
+    margin-left: 500px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .checkbag2 i {
+    margin-top: 1230px;
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .checkbag2 i {
+    margin-top: 1230px;
+    margin-left: 270px;
+    font-size: 25px;
+  }
+}
+
+.checkbag3 {
+  overflow-x: hidden;
+}
+.checkbag3 i {
+  font-size: 40px;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 1230px;
+  z-index: 1000;
+}
+@media screen and (max-width: 1026px) {
+  .checkbag3 i {
+    margin-top: 1220px;
+    margin-left: 600px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .checkbag3 i {
+    margin-top: 1900px;
+    margin-left: 500px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .checkbag3 i {
+    margin-top: 1900px;
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .checkbag3 i {
+    margin-top: 1900px;
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .checkbag3 i {
+    margin-top: 1900px;
+    margin-left: 250px;
+    font-size: 25px;
+  }
+}
+
+#maincheckout {
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 376px) {
+  #maincheckout div a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 321px) {
+  #maincheckout div a {
+    font-size: 12px;
+  }
+}
+#maincheckout .checkmini1 img {
+  width: 420px;
+}
+#maincheckout .checkmini2 img {
+  width: 420px;
+}
+#maincheckout .checkmini3 img {
+  width: 420px;
+}
+#maincheckout div div {
+  margin-top: 30px;
+}
+#maincheckout div div a {
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.checkmini1 div {
+  overflow: hidden;
+}
+.checkmini1 div img:hover {
+  scale: 1.1;
+  transition: scale 2s;
+}
+
+.checkmini2 div {
+  overflow: hidden;
+}
+.checkmini2 div img:hover {
+  scale: 1.1;
+  transition: scale 2s;
+}
+
+.checkmini3 div {
+  overflow: hidden;
+}
+.checkmini3 div img:hover {
+  scale: 1.1;
+  transition: scale 2s;
+}
+
+#mainmarquee {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+.minimarquee1 div {
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.minimarquee1 div div {
+  font-size: 30px;
+}
+
+.minimarquee2 div {
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.minimarquee2 div div {
+  font-size: 30px;
+}
+
+.minimarquee3 div {
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.minimarquee3 div div {
+  font-size: 30px;
+}
+
+#costal {
+  overflow-x: hidden;
+}
+#costal .minicoastal1 {
+  overflow-x: hidden;
+  margin-top: 80px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 376px) {
+  #costal .minicoastal1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #costal .minicoastal1 {
+    font-size: 25px;
+  }
+}
+#costal .minicoastal2 {
+  overflow-x: hidden;
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#costal .minicoastal3 {
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  width: 120px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#costal .minicoastal3:hover {
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+.minicoastal2 {
+  display: flex;
+  overflow-x: hidden;
+}
+.minicoastal2 div img {
+  width: 600px;
+  height: 80vh;
+}
+
+.headingfeature {
+  font-size: 30px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+#Featured {
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+#Featured div img {
+  width: 180px;
+  height: 150px;
+}
+
+.underline1 {
+  background-color: rgba(54, 49, 49, 0.699);
+  height: 0.1px;
+  margin-bottom: 50px;
+}
+
+.minifollowus1 {
+  margin-top: 100px;
+}
+.minifollowus1 div {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+@media screen and (max-width: 376px) {
+  .minifollowus1 div {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .minifollowus1 div {
+    font-size: 25px;
+  }
+}
+.minifollowus1 .tag143 {
+  font-size: 20px;
+}
+
+.minifollowus2 {
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.minifollowus2 .firstminflo1 {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/22.2a.jpg?v=1708672024&width=990");
+  height: 200px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.minifollowus2 .firstminflo1:hover {
+  background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  overflow-x: hidden;
+}
+.minifollowus2 .firstminflo1 div {
+  overflow: hidden;
+}
+
+.firstminflo2 {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/2.1a.jpg?v=1708671658&width=823");
+  height: 200px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.firstminflo2:hover {
+  background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  overflow-x: hidden;
+}
+
+.firstminflo2 div {
+  overflow: hidden;
+}
+
+.firstminflo3 {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/7.1a.jpg?v=1708671676&width=990");
+  height: 200px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.firstminflo3:hover {
+  background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  overflow-x: hidden;
+}
+
+.firstminflo3 div {
+  overflow: hidden;
+}
+
+.firstminflo4 {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/14.1a_923e2467-dbba-4e11-92ef-6a73309660c0.jpg?v=1709119519&width=990");
+  height: 200px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.firstminflo4:hover {
+  background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  overflow-x: hidden;
+}
+
+.firstminflo4 div {
+  overflow: hidden;
+}
+
+.firstminflo5 {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  margin: 10px;
+  background-image: url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360");
+  height: 200px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.firstminflo5:hover {
+  background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  overflow-x: hidden;
+}
+
+.firstminflo5 div {
+  overflow: hidden;
+}
+
+#footer {
+  overflow-x: hidden;
+  margin-top: 90px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: antiquewhite;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.minifooter1 div a {
+  font-size: 40px;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.minifooter1 div {
+  font-size: 20px;
+  padding-top: 30px;
+}
+.minifooter1 div input {
+  padding: 20px;
+}
+.minifooter1 div input::placeholder {
+  font-size: 20px;
+}
+.minifooter1 .Subscribe a {
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+.minifooter1 .Subscribe a:hover {
+  background-color: white;
+  color: black;
+}
+
+.minifooter2 .Quick {
+  padding-bottom: 10px;
+}
+.minifooter2 .Quick a {
+  margin-top: 90px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 800;
+}
+.minifooter2 div a {
+  text-decoration: none;
+}
+
+.minifooter3 {
+  margin-top: 40px;
+}
+.minifooter3 .companyh {
+  padding-bottom: 10px;
+}
+.minifooter3 .companyh a {
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.minifooter3 div a {
+  text-decoration: none;
+}
+
+.minifooter4 .ourstore {
+  margin-top: 25px;
+}
+.minifooter4 .ourstore a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+}
+.minifooter4 div a i {
+  margin: 6px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=multipage.css.map */

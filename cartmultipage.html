@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+*{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    overflow-x: hidden;
+}
+/* =============================== */
+#maincart{
+    display: grid;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    background-color: aqua;
+    width: 500px;
+    padding: 20px;
+    .shoppingcart{
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .buy{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+.Rustic{
+    display: flex;
+    /* justify-content: space-around; */
+    padding-bottom: 20px;
+    .minirust1{
+        img{
+            width: 120px;
+        }
+       
+    }
+    .minirust2{
+          div{
+            padding-left: 20px;
+            font-size: 20px;
+            & a{
+                text-decoration: none;
+                
+            }
+           }
+           .bplussub{
+            border: 1px solid black;
+            width: 50px;
+            padding-left: 10px;
+            margin-left: 20px;
+           }
+        }
+    }
+        .mainbutn{
+            display: flex;
+            
+           &  .note{
+            margin: 5px;
+                border: 1px solid black;
+                background-color: antiquewhite;
+               
+                width: 50px;
+                padding: 10px;
+               & a{
+                    text-decoration: none;
+                }
+               
+            }
+            .note:hover{
+                background-color: black;
+                a{
+                    color: white;
+                }
+            }
+
+
+            &  .shipping{
+                margin: 5px;
+                border: 1px solid black;
+                background-color: antiquewhite;
+                width: 70px;
+                padding: 10px;
+               & a{
+                    text-decoration: none;
+                }
+               
+            }
+            .shipping:hover{
+                background-color: black;
+                a{
+                    color: white;
+                }
+            }
+
+
+
+            &  .Coupon{
+                margin: 5px;
+                border: 1px solid black;
+                background-color: antiquewhite;
+                width: 60px;
+                padding: 10px;
+               & a{
+                    text-decoration: none;
+                }
+               
+            }
+            .Coupon:hover{
+                background-color: black;
+                a{
+                    color: white;
+                }
+            }
+         
+
+
+        }
+
+        /* ========= */
+        .checkout{
+            margin-top: 15px;
+            border: 1px solid black;
+            width: 190px;
+            padding: 10px;
+            background-color: black;
+            a{
+                text-decoration: none;
+                padding-left: 50px;
+                font-size: 20px;
+                color: white;
+            }
+            
+        }
+        .checkout:hover{
+            scale: 1.1;
+        }
+
+        
+}
+
+    </style>
+</head>
+<body>
+    <section id="maincart">
+        <div class="star"><i class="fa-solid fa-star"></i></div>
+    <div class="shoppingcart">Shopping Cart</div>
+    <div>🔥 These products are limited, checkout within 2 m 31 s</div>
+    <div class="buy">Buy $248.20 more to enjoy FREE Shipping</div>
+    <meter value="300" max="800"  ></meter>
+
+    <div class="Rustic">
+        <div class="minirust1">
+             <img src="https://cdn.shopify.com/s/files/1/2348/0105/products/6.1a.jpg?v=1708671720&width=533" alt="">
+        </div>
+        <div class="minirust2">
+            <div><a href="#">Rustic strappy crop top with</a></div>
+            <div>Color: Beige</div>
+            <div>Size: S</div>
+            <div>$15.90</div>
+            <div class="bplussub"><a href="#"> - 1 +</a></div>
+        </div>
+    </div>
+
+    <!-- === -->
+    <div style="font-weight: 600;">Customers also bought with "Rustic strappy crop top<br> with"</div>
+    <!-- <\======= -->
+    <div class="mainbutn">
+        <div class="note"><a href="#">Note</a></div>
+        <div class="shipping"><a href="#">Shipping</a></div>
+        <div class="Coupon"><a href="#">Coupon</a></div>
+    </div>
+    <!-- ===================== -->
+    <div class="checkout"><a href="#">Check out</a></div>
+</section>
+</body>
+</html>

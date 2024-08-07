@@ -1,0 +1,2825 @@
+$bgcolor:rgb(241, 69, 7);
+$fontcolor:white;
+$width1:100%;
+// ==============================================================
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+*{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+// ==============================================================
+#uppernavbar{
+     padding: 10px;
+    height: 30px;
+    // width:100%;
+    background-color: $bgcolor;
+    color: $fontcolor;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;  
+    @media screen and (max-width:426px) {
+      
+        font-size: 15px;
+        }
+}
+
+
+
+#label20{
+    i{
+    position: absolute;
+    top:20px;
+    z-index: 100000;
+    margin-left: 1300px;
+    font-size: 20px;
+    color:white;
+
+    @media screen and (max-width:1026px) {
+    position: absolute;
+    top:10px;
+    z-index: 100000;
+    margin-left: 730px;
+    font-size: 20px;
+    }
+
+    @media screen and (max-width:770px) {
+        position: absolute;
+        top:10px;
+        z-index: 1000;
+        margin-left: 730px;
+        font-size: 20px;
+        }
+
+        @media screen and (max-width:426px) {
+            position: absolute;
+            top:10px;
+            z-index: 1000;
+            margin-left: 400px;
+            font-size: 20px;
+            }
+
+            
+        @media screen and (max-width:376px) {
+            position: absolute;
+            top:10px;
+            z-index: 1000;
+            margin-left: 340px;
+            font-size: 20px;
+            }
+
+            @media screen and (max-width:321px) {
+                position: absolute;
+                top:12px;
+                z-index: 1000;
+                margin-left: 304px;
+                font-size: 17px;
+                }
+}
+}
+
+#input10:checked~#uppernavbar{
+    display: none;
+}
+#input10:checked~#label20{
+    display: none;
+}
+
+
+   
+// ====================ends upper navbar =========================== ============
+
+// =======================start mid navbar=======================================
+#midnavbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    // background-color: antiquewhite;
+    padding: 15px;
+    font-size: 20px;
+    // width:100%;
+    overflow-x: hidden;
+    // a{
+    //     text-decoration: none;
+    //     color: rgb(75, 65, 65);
+    // }
+    .insta{
+      span{
+        a{ 
+            
+            text-decoration: none;
+            font-size: 20px;
+            @media screen and (max-width:1026px)
+             {
+            font-size: 15px !important;
+             }
+            i{  
+                font-size: 20px;
+                 @media screen and (max-width:1026px)
+                  {
+                    font-size: 15px;
+                  }
+             }
+         }
+      }
+    }
+    
+    .fb{
+        span{
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                @media screen and (max-width:1026px)
+                {
+                  font-size: 15px;
+                }
+                i{
+                     font-size: 20px;
+                    @media screen and (max-width:1026px)
+                  {
+                    font-size: 15px;
+                  }
+                }
+            }
+        }
+
+    }
+    .free{
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            @media screen and (max-width:1026px)
+                  {
+                    font-size: 15px;
+                  }
+        }
+
+    }
+    .state{
+          a{
+            font-size: 20px;
+            text-decoration: none;
+            @media screen and (max-width:1026px)
+            {
+              font-size: 15px;
+            }
+          }
+    }
+    .english{
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            @media screen and (max-width:1026px)
+                  {
+                    font-size: 15px;
+                  }
+         }
+
+    }
+    @media screen and (max-width:770px) {
+        display: none;
+    }
+}
+
+        
+
+.line{
+    // border: 0.01px solid rgb(107, 102, 102);
+    background-color: grey;
+    height: 1px;
+}
+// =========================starthomeover================================
+
+// ==============================start reponsive navbar===================
+    .slidebar{
+        background-color: coral;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 140px;
+        left: -500px;
+        z-index: 10000000;
+        display: none;
+        ul{
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 25px;
+                    margin: 20px;
+                    padding: 20px;
+                  
+                }
+            }
+        }
+        @media screen and (max-width:770px){
+            display: block;
+            
+         }  
+
+    }
+    label{
+        display: none;
+        font-size: 25px;
+      
+        @media screen and (max-width:770px){
+           display: block;
+           margin-left: -110px;
+        }   
+        @media screen and (max-width:426px){
+            display: block;
+            margin-left: -80px;
+         }  
+         @media screen and (max-width:376px){
+            display: block;
+            margin-left: -80px;
+         }  
+         @media screen and (max-width:321px){
+            display: block;
+            margin-left: -70px;
+         }  
+        }
+       
+        #abhi:checked~.slidebar{
+            
+            @media screen  and (max-width:770px){
+            left: 0px;
+            transition: 1.2s;
+            cursor: pointer;
+           }
+        }
+        
+    
+// =========================end mid navbar=================================
+#mainnavbar{
+    // position: sticky;
+    // top: 100px;
+    // z-index: 10000;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    background-color:white;
+    // margin: 0px;
+    overflow-x: hidden;
+    // flex-wrap: wrap;
+
+}
+// ===================stat home hover and etc =========================
+.minihome{
+    position: absolute;
+    top:170px;
+    left: 0px;
+    display: none;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 50vh;
+    background-color: coral;
+    z-index: 1000;
+
+    .miniho1{
+        padding: 20px;
+      
+        & div{
+          
+            a{
+            text-decoration: none;
+            // display: none;
+            padding: 20px;
+            margin: 20px;
+            }
+
+            a:hover{
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+    
+    
+}
+.mainhome:hover{
+    & a{
+        border-bottom: 2px solid black;
+        transition: 1.2s;
+        transition-duration: inherit;
+       
+    }
+   
+}
+.mainhome:hover + .minihome{
+    display: grid;
+    transition: 1.8s;
+}
+
+// =====
+
+.minishop{
+    position: absolute;
+    top:170px;
+    left: 0px;
+    display: none;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 50vh;
+    background-color: coral;
+    z-index: 1000;
+
+    .minishop1{
+        padding: 20px;
+       display: grid;
+       grid-template-columns: auto auto auto auto auto;
+        & div{
+          
+            a{
+            text-decoration: none;
+            // display: none;
+            padding: 20px;
+            margin: 20px;
+            }
+
+            a:hover{
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+    .minishop2{
+        img{
+            width: 300px;
+            margin-top: 50px;
+        }
+    }
+    
+    
+}
+.mainshop:hover{
+   a{
+    border-bottom: 2px solid black;
+   }
+}
+.mainshop:hover + .minishop{
+    display:grid;
+    transition: 1.8s;
+
+}
+
+// =====
+.Productshop{
+    position: absolute;
+    top:170px;
+    left: 0px;
+    display: none;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 50vh;
+    background-color: coral;
+    z-index: 1000;
+
+    .productshop1{
+        padding: 20px;
+       display: grid;
+       grid-template-columns: auto auto auto auto auto;
+        & div{
+          
+            a{
+            text-decoration: none;
+            // display: none;
+            padding: 20px;
+            margin: 20px;
+            }
+
+            a:hover{
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+    .Productshop2{
+        img{
+            width: 200px;
+            margin-top: 20px;
+        }
+    }
+    
+    
+}
+.mainproduct:hover{
+   a{
+    border-bottom: 2px solid black;
+   }
+}
+.mainproduct:hover + .Productshop{
+    display:grid;
+    transition: 1.8s;
+
+}
+
+// ================
+.pageshop{
+    position: absolute;
+    top:170px;
+    left:410px;
+    display: none;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    width: 10vw;
+    height: 50vh;
+    background-color: coral;
+    z-index: 1000;
+
+    .pageshop1{
+        padding: 20px;
+       display: grid;
+       grid-template-columns: auto auto auto auto auto;
+        & div{
+          
+            a{
+            text-decoration: none;
+            // display: none;
+            padding: 20px;
+            margin: 20px;
+            }
+
+            a:hover{
+                border-bottom: 2px solid black;
+            }
+        }
+    }  
+}
+.mainpage:hover{
+   a{
+    border-bottom: 2px solid black;
+   }
+}
+.mainpage:hover + .pageshop{
+    display:grid;
+    transition: 1.8s;
+
+}
+
+// ======
+.forkitshop{
+    position: absolute;
+    top:170px;
+    left: 0px;
+    display: none;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 50vh;
+    background-color: coral;
+    z-index: 1000;
+
+    .forkitshop1{
+        padding: 20px;
+       display: grid;
+       grid-template-columns: auto auto auto auto auto;
+        & div{
+          
+            a{
+            text-decoration: none;
+            // display: none;
+            padding: 20px;
+            margin: 20px;
+            }
+
+            a:hover{
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+    .forkitshop2{
+        img{
+            width: 400px;
+            margin-top: 20px;
+        }
+    }
+    
+    
+}
+.mainforkit:hover{
+   a{
+    border-bottom: 2px solid black;
+   }
+}
+.mainforkit:hover + .forkitshop{
+    display:grid;
+    transition: 1.8s;
+
+}
+// ============================
+.undermainnavbar{
+    display: flex;
+    list-style: none;
+ 
+    li{
+        a{
+            text-decoration: none;
+            margin: 15px;
+            font-size: 20px;
+            width: 50px;
+            @media screen  and (max-width:770px){
+                display: none;
+            }
+        }
+    }
+ 
+}
+// ====
+.minimogimg{
+    img{
+        width: 180px;
+        @media screen and (max-width:321px) {
+            width: 120px;
+        }
+        @media screen and (max-width:376px){
+            width: 100px;
+            margin-left: -30px;
+         }  
+    }
+    @media screen and (max-width:321px) {
+        margin-left: -20px;
+    }
+    
+}
+// =====
+.iconmainnavbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    li{
+        a{
+            i{
+              margin: 15px;
+              font-size: 20px;
+            }
+        }
+    }
+    .loginnone{
+        @media screen and (max-width:770px) {
+            display: none;
+        }
+    }
+
+    .wistnone{
+        @media screen and (max-width:770px) {
+            display: none;
+        }
+    }
+}
+
+
+// ====================ends midnavbar===========================================
+.fixminimog1{
+    overflow-x: hidden;
+    font-size: 20px;
+    background-color: rgb(232, 70, 11);
+    color: white;
+    padding: 10px;
+    width: 220px;
+    border-radius: 10px;
+    position: fixed;
+    top: 400px;
+    z-index: 1000;
+    left: -70px;
+    rotate: 90deg;
+    overflow-x: hidden;
+    span{
+        margin: 5px;
+     
+    }
+    @media screen and (max-width:376px) {
+        left: -90px;
+    }
+}
+
+.fixminimog2{
+    overflow-x: hidden;
+
+  background-color: rgb(232, 70, 11);
+  width: 50px;
+  padding: 5px;
+  position: fixed;
+  top: 350px;
+  left: 1320px;
+  z-index: 1000;
+ 
+  @media screen and (max-width:1026px) {
+    width: 50px;
+    padding: 5px;
+    position: fixed;
+    top: 350px;
+    left: 950px;
+    z-index: 1000;
+  }
+
+  
+  @media screen and (max-width:770px) {
+    width: 50px;
+    padding: 5px;
+    position: fixed;
+    top: 350px;
+    left: 690px;
+    z-index: 1000;
+  }
+
+   
+  @media screen and (max-width:426px) {
+
+    top: 350px;
+    left: 350px;
+
+  }
+
+  @media screen and (max-width:376px) {
+
+    top: 350px;
+    left: 310px;
+    width: 50px;
+    padding: 3px;
+    font-size: 10px;
+
+  }
+
+  
+  @media screen and (max-width:321px) {
+
+    top: 350px;
+    left: 255px;
+    width: 50px;
+    padding: 3px;
+    font-size: 10px;
+
+  }
+    div{
+        a{
+            i{
+                margin: 5px;
+                font-size: 20px;
+                border: 2px solid black;
+                padding: 10px;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+    }
+   
+}
+
+
+
+
+#mainslide{
+    width: 100%;
+    height: 90vh;
+    // margin-left: 300px;
+    background-image: url("https://t4.ftcdn.net/jpg/05/39/99/67/360_F_539996737_T5gJEIEqsGUjMXhrLZt0lDLcrOWsSHlb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    z-index: 0;
+    animation-name: run;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    @media screen and (max-width:770px) {
+        width:100%;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (max-width:426px) {
+        width:100%;
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (max-width:426px) {
+        width:100%;
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media screen and (max-width:321px)
+    {
+        width: 100%;
+        height: 20vh;
+    }
+        
+    }
+
+@keyframes run 
+{
+    0%{
+        background-image: url("https://t4.ftcdn.net/jpg/05/39/99/67/360_F_539996737_T5gJEIEqsGUjMXhrLZt0lDLcrOWsSHlb.jpg");
+        transition: background-image 4s;
+        // scale:0.5;
+    }
+    33%{
+        background-image: url("https://t4.ftcdn.net/jpg/05/39/99/67/360_F_539996737_T5gJEIEqsGUjMXhrLZt0lDLcrOWsSHlb.jpg");
+        transition: background-image 4s;
+        // scale:1;
+    }
+     33%{
+        background-image: url("https://t4.ftcdn.net/jpg/04/29/97/39/360_F_429973962_6vMeg6RYgfFvKvBy6A2r8WlpOvFX9746.jpg");
+        transition: background-image 4s;
+        // scale:1;
+    }
+    66%{
+        background-image: url("https://t4.ftcdn.net/jpg/04/29/97/39/360_F_429973962_6vMeg6RYgfFvKvBy6A2r8WlpOvFX9746.jpg");
+        transition: background-image 4s;
+        // scale:1;
+    }
+    66%{
+  background-image: url("https://t3.ftcdn.net/jpg/02/64/92/28/360_F_264922838_NErJEovZiP9MTa49apqL1Vs3f88ZT8Dg.jpg");
+  transition: background-image 4s;
+//   scale:1;
+    }
+    100%{
+        background-image: url("https://t3.ftcdn.net/jpg/02/64/92/28/360_F_264922838_NErJEovZiP9MTa49apqL1Vs3f88ZT8Dg.jpg");
+        transition: background-image 4s;
+        scale:1;
+    }
+}
+
+
+// ==============================ends hero section =================================
+.shp{
+    font-size: 50px;
+    padding: 50px;
+    margin-top: 30px;
+    
+    overflow-x: hidden;
+    @media screen and (max-width:426px) {
+        font-size: 40px;
+        padding: 10px;
+        margin-top: 50px;
+        
+    }
+    @media screen and (max-width:376px) {
+        font-size: 30px;
+        padding: 5px;
+        margin-top: 50px;
+        
+    }
+    @media screen and (max-width:321px) {
+        font-size: 20px;
+        padding: 5px;
+        margin-top: 50px;
+        
+    }
+}
+
+
+
+
+
+// #categories{
+//     padding: 10px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     overflow-x: hidden;
+//     justify-content:space-evenly;
+   
+// }
+//    .cate1 
+//    {
+//       img{
+//         width: 300px;
+//         height: 450px;
+        
+//      }
+//       img:hover{
+//         scale: 1.2;
+//       }
+//     }
+
+     
+
+
+// .a1{
+//     font-size: 20px;
+//     text-decoration: none;
+//     position: absolute;
+//     top: 1380px;
+//     left: 170px;
+//     z-index: 1000;
+    
+//   }
+
+//   .a2{
+//     font-size: 20px;
+//     text-decoration: none;
+//     position: absolute;
+//     top: 1380px;
+//     left: 590px;
+//     z-index: 1000;
+    
+//   }
+
+//   .a3{
+//      font-size: 20px;
+//      text-decoration: none;
+//      position: absolute;
+//      top: 1380px;
+//      left: 990px;
+//      z-index: 1000;
+//   }
+
+//   ================================ends categories ============================================
+
+//====================================start bestsaller ===========================
+.yare{
+    font-size: 50px;
+    margin-top: 40px;
+    padding: 10px;
+    overflow-x: hidden;
+    @media screen  and (max-width:426px){
+        font-size: 35px;
+    }
+    @media screen  and (max-width:376px){
+        font-size: 30px;
+    }
+    @media screen  and (max-width:321px){
+        font-size: 25px;
+    }
+}
+
+#mainbest{
+overflow-x: hidden;
+padding: 50px;
+display:grid;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+// grid-template-columns: auto auto auto auto auto;
+// overflow-x: hidden;
+}
+.minibest1{
+    margin: 10px;
+    background-image:url("https://fashion.minimog.co/cdn/shop/products/22.2a.jpg?v=1708672024&width=990") ;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    // =====
+    .select{
+        border: 2px solid black;
+        position: relative;
+        display: none;
+        top: 240px;
+        left: 50px;
+        padding: 5px;
+        background-color: black;
+       &  a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .select:hover{
+        background-color:white;
+        a{
+            color:black;
+        }
+    }
+
+    // // =====
+    .abhisak{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:10px;
+        left: 25px;
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+
+    .abhisak:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+    
+    //  =====
+    .miniicons2h{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:20px;
+        left: 150px;
+
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+    .miniicons2h:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+
+
+}
+// .minibest1{
+//     overflow: hidden;
+//     height: 300px;
+//     width: 200px;
+//     // border: 2px solid red;
+// }
+.minibest1:hover{
+    background-image: url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    overflow-x: hidden;
+
+    & .select{
+        display:inline;
+    }
+  
+   
+    .abhisak{
+        display: inline-block;
+      }
+
+      .miniicons2h{
+        display: inline-block;
+      }
+   
+}
+// =====
+.minibest2{
+   
+    width: 200px;
+    margin-left: 8px;
+    overflow-x: hidden;
+}
+.crop1{
+    overflow-x: hidden;
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        
+    }
+}
+.doleri{
+    overflow-x: hidden;
+    font-size: 20px;
+    color: rgba(35, 32, 32, 0.832);
+    margin-top: 5px;
+}
+.radio{
+    overflow-x: hidden;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-right: 60px;
+}
+.ra1{
+    overflow-x: hidden;
+    border:2px solid gray;
+    padding: 15px;
+    background-color:white;
+    border-radius: 50%;
+    
+}
+.ra1:hover{
+    overflow-x: hidden;
+    border: 2px solid black;
+    background-color: white;
+    scale:1.1
+}
+.ra2{
+    overflow-x: hidden;
+    border:2px solid gray;
+    padding: 15px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 50%;
+    
+}
+.ra2:hover{
+    overflow-x: hidden;
+    border: 2px solid black;
+    background-color: white;
+    scale:1.1
+}
+.ra3{
+    overflow-x: hidden;
+    border:2px solid gray;
+   
+    padding: 15px;
+    background-color:rgb(232, 9, 9);
+   border-radius: 50%;
+    
+}
+.ra3:hover{
+    overflow-x: hidden;
+    border: 2px solid rgb(17, 1, 1);
+    background-color: white;
+    scale:1.1
+}
+// ======
+.minibest3{
+    overflow-x: hidden;
+    margin: 10px;
+    background-image:url("https://fashion.minimog.co/cdn/shop/products/2.1a.jpg?v=1708671658&width=823") ;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .select{
+        border: 2px solid black;
+        position: relative;
+        display: none;
+        top: 240px;
+        left: 50px;
+        padding: 5px;
+        background-color: black;
+       &  a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .select:hover{
+        background-color:white;
+        a{
+            color:black;
+        }
+    }
+
+    // // =====
+    .abhisak{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:10px;
+        left: 25px;
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+
+    .abhisak:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+    
+    //  =====
+    .miniicons2h{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:20px;
+        left: 150px;
+
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+    .miniicons2h:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+
+
+}
+.minibest3:hover{
+    overflow-x: hidden;
+    background-image: url("https://fashion.minimog.co/cdn/shop/products/2.1b.jpg?v=1708671658&width=360");
+    transition: 1s;
+
+    & .select{
+        display:inline;
+    }
+  
+   
+    .abhisak{
+        display: inline-block;
+      }
+
+      .miniicons2h{
+        display: inline-block;
+      }
+}
+// =====
+.minibest2{
+    overflow-x: hidden;
+    width: 200px;
+    margin-left: 8px;
+}
+.crop1{
+    overflow-x: hidden;
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        
+    }
+}
+.doleri{
+    overflow-x: hidden;
+    font-size: 20px;
+    color: rgba(35, 32, 32, 0.832);
+    margin-top: 5px;
+}
+.radio{
+    overflow-x: hidden;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-right: 60px;
+}
+.ra4{
+    overflow-x: hidden;
+    border:2px solid gray;
+    padding: 15px;
+    background-color:white;
+    border-radius: 50%;
+    
+}
+.ra4:hover{
+    overflow-x: hidden;
+    border: 2px solid black;
+    background-color: white;
+    scale:1.1
+}
+.ra5{
+    overflow-x: hidden;
+    border:2px solid gray;
+    padding: 15px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 50%;
+    
+}
+.ra5:hover{
+    overflow-x: hidden;
+    border: 2px solid black;
+    background-color: white;
+    scale:1.1
+}
+.ra6{
+    overflow-x: hidden;
+    border:2px solid gray;
+   
+    padding: 15px;
+    background-color:rgb(226, 207, 207);
+   border-radius: 50%;
+    
+}
+.ra6:hover{
+    overflow-x: hidden;
+    border: 2px solid rgb(17, 1, 1);
+    background-color: rgb(90, 29, 29);
+    scale:1.1
+}
+// =========
+.minibest5{
+    overflow-x: hidden;
+    margin: 10px;
+    background-image:url("https://fashion.minimog.co/cdn/shop/products/7.1a.jpg?v=1708671676&width=990") ;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .select{
+        border: 2px solid black;
+        position: relative;
+        display: none;
+        top: 240px;
+        left: 50px;
+        padding: 5px;
+        background-color: black;
+       &  a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .select:hover{
+        background-color:white;
+        a{
+            color:black;
+        }
+    }
+
+    // // =====
+    .abhisak{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:10px;
+        left: 25px;
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+
+    .abhisak:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+    
+    //  =====
+    .miniicons2h{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:20px;
+        left: 150px;
+
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+    .miniicons2h:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+
+
+}
+.minibest5:hover{
+    overflow-x: hidden;
+    background-image: url("https://fashion.minimog.co/cdn/shop/products/7.1b.jpg?v=1708671676&width=360");
+    transition: 1s;
+
+    & .select{
+        display:inline;
+    }
+  
+   
+    .abhisak{
+        display: inline-block;
+      }
+
+      .miniicons2h{
+        display: inline-block;
+      }
+}
+// ==
+.radio{
+    overflow-x: hidden;
+    margin-top: 10px;
+    display: flex;
+   justify-content: space-evenly;
+   margin-right: 60px;
+}
+.ra7{
+    overflow-x: hidden;
+    border:2px solid gray;
+    padding: 15px;
+    background-color:rgb(60, 228, 22);
+    border-radius: 50%;
+    
+}
+.ra7:hover{
+    overflow-x: hidden;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    scale:1.1
+}
+.ra8{
+    overflow-x: hidden;
+    border:2px solid gray;
+    padding: 15px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 50%;
+    
+}
+.ra8:hover{
+    overflow-x: hidden;
+    border: 2px solid rgb(16, 19, 17);
+    background-color: white;
+    scale:1.1
+}
+.ra9{
+    overflow-x: hidden;
+    border:2px solid gray;
+   
+    padding: 15px;
+    background-color:rgb(232, 9, 9);
+   border-radius: 50%;
+    
+}
+.ra9:hover{
+    overflow-x: hidden;
+    border: 2px solid rgb(17, 1, 1);
+    background-color: white;
+    scale:1.1
+}
+// ==========
+
+.minibest7{
+    overflow-x: hidden;
+    margin: 10px;
+    background-image:url("https://fashion.minimog.co/cdn/shop/products/14.1a_923e2467-dbba-4e11-92ef-6a73309660c0.jpg?v=1709119519&width=990") ;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .select{
+        border: 2px solid black;
+        position: relative;
+        display: none;
+        top: 240px;
+        left: 50px;
+        padding: 5px;
+        background-color: black;
+       &  a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .select:hover{
+        background-color:white;
+        a{
+            color:black;
+        }
+    }
+
+    // // =====
+    .abhisak{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:10px;
+        left: 25px;
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+
+    .abhisak:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+    
+    //  =====
+    .miniicons2h{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:20px;
+        left: 150px;
+
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+    .miniicons2h:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+
+}
+.minibest7:hover{
+    overflow-x: hidden;
+    background-image: url("https://fashion.minimog.co/cdn/shop/products/14.1b_7dfad9d2-b8fd-49aa-9e87-8c2afc776a68.jpg?v=1709119519&width=360");
+    transition: 1s;
+
+    & .select{
+        display:inline;
+    }
+  
+   
+    .abhisak{
+        display: inline-block;
+      }
+
+      .miniicons2h{
+        display: inline-block;
+      }
+}
+
+
+.minibest9{
+    overflow-x: hidden;
+    margin: 10px;
+    background-image:url("https://fashion.minimog.co/cdn/shop/products/22.2a.jpg?v=1708672024&width=990") ;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .select{
+        border: 2px solid black;
+        position: relative;
+        display: none;
+        top: 240px;
+        left: 50px;
+        padding: 5px;
+        background-color: black;
+       &  a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .select:hover{
+        background-color:white;
+        a{
+            color:black;
+        }
+    }
+
+    // // =====
+    .abhisak{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:10px;
+        left: 25px;
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+
+    .abhisak:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+    
+    //  =====
+    .miniicons2h{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:20px;
+        left: 150px;
+
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+    .miniicons2h:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+
+}
+.minibest9:hover{
+    overflow-x: hidden;
+    background-image: url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360");
+    transition: 1s;
+    & .select{
+        display:inline;
+    }
+  
+   
+    .abhisak{
+        display: inline-block;
+      }
+
+      .miniicons2h{
+        display: inline-block;
+      }
+}
+// ==============================
+#mainbest1{
+    overflow-x: hidden;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    // display:grid;
+    // grid-template-columns: auto auto auto auto auto;
+    }
+    .minibes1t{
+        overflow-x: hidden;
+        margin: 10px;
+        background-image:url("https://fashion.minimog.co/cdn/shop/products/9.1b.jpg?v=1708671749&width=360") ;
+        height: 300px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // overflow: hidden;
+        
+    .select{
+        border: 2px solid black;
+        position: relative;
+        display: none;
+        top: 240px;
+        left: 50px;
+        padding: 5px;
+        background-color: black;
+       &  a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .select:hover{
+        background-color:white;
+        a{
+            color:black;
+        }
+    }
+
+    // // =====
+    .abhisak{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:10px;
+        left: 25px;
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+
+    .abhisak:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+    
+    //  =====
+    .miniicons2h{
+        background-color:rgb(231, 213, 213);
+        display: none;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top:20px;
+        left: 150px;
+
+        i{
+            font-size: 20px;
+            color:black;
+        }
+        
+    }
+    .miniicons2h:hover{
+        background-color: black;
+        i{
+            color:white;
+        }
+    }
+    }
+    // .minibest1{
+    //     overflow: hidden;
+    //     height: 300px;
+    //     width: 200px;
+    //     // border: 2px solid red;
+    // }
+    .minibes1t:hover{
+        overflow-x: hidden;
+        background-image: url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 1s;
+        // scale:1.1;
+        // overflow: hidden;
+        & .select{
+            display:inline;
+        }
+      
+       
+        .abhisak{
+            display: inline-block;
+          }
+    
+          .miniicons2h{
+            display: inline-block;
+          }
+    }
+    // =====
+    .minibes2t{
+        overflow-x: hidden;
+        width: 200px;
+        margin-left: 8px;
+    }
+    .cro1p{
+        overflow-x: hidden;
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            
+        }
+    }
+    .doleri{
+        overflow-x: hidden;
+        font-size: 20px;
+        color: rgba(35, 32, 32, 0.832);
+        margin-top: 5px;
+    }
+    .radio{
+        overflow-x: hidden;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-evenly;
+       margin-right: 60px;
+    }
+    .r1a{
+        overflow-x: hidden;
+        border:2px solid gray;
+        padding: 15px;
+        background-color:rgb(11, 241, 249);
+        border-radius: 50%;
+        
+    }
+    .r1a:hover{
+        overflow-x: hidden;
+        border: 2px solid black;
+        background-color: white;
+        scale:1.1
+    }
+    .r2a{
+        overflow-x: hidden;
+        border:2px solid gray;
+        padding: 15px;
+        background-color:rgb(0, 0, 0);
+        border-radius: 50%;
+        
+    }
+    .r2a:hover{
+        overflow-x: hidden;
+        border: 2px solid black;
+        background-color: white;
+        scale:1.1
+    }
+    .r3a{
+        overflow-x: hidden;
+        border:2px solid gray;
+       
+        padding: 15px;
+        background-color:rgb(232, 9, 9);
+       border-radius: 50%;
+        
+    }
+    .r3a:hover{
+        overflow-x: hidden;
+        border: 2px solid rgb(17, 1, 1);
+        background-color: white;
+        scale:1.1
+    }
+    // ======
+
+
+    .minibest3{
+        overflow-x: hidden;
+        margin: 10px;
+        background-image:url("https://fashion.minimog.co/cdn/shop/products/11.1a.jpg?v=1708671758&width=990") ;
+        height: 300px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+        .select{
+            border: 2px solid black;
+            position: relative;
+            display: none;
+            top: 240px;
+            left: 50px;
+            padding: 5px;
+            background-color: black;
+           &  a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .select:hover{
+            background-color:white;
+            a{
+                color:black;
+            }
+        }
+    
+    //     // // =====
+    //     .abhisak{
+    //         background-color:rgb(231, 213, 213);
+    //         display: none;
+    //         width: 20px;
+    //         height: 20px;
+    //         padding: 10px;
+    //         border-radius: 50%;
+    //         position: relative;
+    //         top:10px;
+    //         left: 150px;
+    //         i{
+    //             font-size: 20px;
+    //             color:black;
+    //         }
+            
+    //     }
+    
+    //     .abhisak:hover{
+    //         background-color: black;
+    //         i{
+    //             color:white;
+    //         }
+    //     }
+        
+    //     //  =====
+    //     .miniicons2h{
+    //         background-color:rgb(231, 213, 213);
+    //         display: none;
+    //         width: 20px;
+    //         height: 20px;
+    //         padding: 10px;
+    //         border-radius: 50%;
+    //         position: relative;
+    //         top:20px;
+    //         left: 150px;
+    
+    //         i{
+    //             font-size: 20px;
+    //             color:black;
+    //         }
+            
+    //     }
+    //     .miniicons2h:hover{
+    //         background-color: black;
+    //         i{
+    //             color:white;
+    //         }
+    //     }
+    
+    
+    }
+        
+    
+    .minibest3:hover{
+        overflow-x: hidden;
+        background-image: url("https://fashion.minimog.co/cdn/shop/products/2.1b.jpg?v=1708671658&width=360");
+        transition: 1s;
+        & .select{
+            display:inline;
+        }
+      
+       
+        .abhisak{
+            display: inline-block;
+          }
+    
+          .miniicons2h{
+            display: inline-block;
+          }
+    }
+
+    // =====
+    .minibest2{
+        overflow-x: hidden;
+        width: 200px;
+        margin-left: 8px;
+    }
+    .crop1{
+        overflow-x: hidden;
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            
+        }
+    }
+    .doleri{
+        overflow-x: hidden;
+        font-size: 20px;
+        color: rgba(35, 32, 32, 0.832);
+        margin-top: 5px;
+    }
+    .radio{
+        overflow-x: hidden;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-evenly;
+       margin-right: 60px;
+    }
+    .r4a{
+        overflow-x: hidden;
+        border:2px solid gray;
+        padding: 15px;
+        background-color:white;
+        border-radius: 50%;
+        
+    }
+    .r4a:hover{
+        overflow-x: hidden;
+        border: 2px solid black;
+        background-color: white;
+        scale:1.1
+    }
+    .r5a{
+        overflow-x: hidden;
+        border:2px solid gray;
+        padding: 15px;
+        background-color:rgb(0, 0, 0);
+        border-radius: 50%;
+        
+    }
+    .r5a:hover{
+        overflow-x: hidden;
+        border: 2px solid black;
+        background-color: white;
+        scale:1.1
+    }
+    .r6a{
+        overflow-x: hidden;
+        border:2px solid gray;
+       
+        padding: 15px;
+        background-color:rgb(226, 207, 207);
+       border-radius: 50%;
+        
+    }
+    .r6a:hover{
+        overflow-x: hidden;
+        border: 2px solid rgb(17, 1, 1);
+        background-color: rgb(90, 29, 29);
+        scale:1.1
+    }
+    // =========
+    .minibest5{
+        overflow-x: hidden;
+        margin: 10px;
+        background-image:url("https://fashion.minimog.co/cdn/shop/products/7.1a.jpg?v=1708671676&width=990") ;
+        height: 300px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .minibest5:hover{
+        overflow-x: hidden;
+        background-image: url("https://fashion.minimog.co/cdn/shop/products/7.1b.jpg?v=1708671676&width=360");
+        transition: 1s;
+    }
+    // ==
+    .radio{
+        overflow-x: hidden;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-evenly;
+       margin-right: 60px;
+    }
+    .ra7{
+        overflow-x: hidden;
+        border:2px solid gray;
+        padding: 15px;
+        background-color:rgb(60, 228, 22);
+        border-radius: 50%;
+        
+    }
+    .ra7:hover{
+        overflow-x: hidden;
+        border: 2px solid black;
+        background-color: rgb(255, 255, 255);
+        scale:1.1
+    }
+    .ra8{
+        overflow-x: hidden;
+        border:2px solid gray;
+        padding: 15px;
+        background-color:rgb(0, 0, 0);
+        border-radius: 50%;
+        
+    }
+    .ra8:hover{
+        overflow-x: hidden;
+        border: 2px solid rgb(16, 19, 17);
+        background-color: white;
+        scale:1.1
+    }
+    .ra9{
+        overflow-x: hidden;
+        border:2px solid gray;
+       
+        padding: 15px;
+        background-color:rgb(232, 9, 9);
+       border-radius: 50%;
+        
+    }
+    .ra9:hover{
+        overflow-x: hidden;
+        border: 2px solid rgb(17, 1, 1);
+        background-color: white;
+        scale:1.1
+    }
+    // ==========
+    
+    .minibest7{
+        overflow-x: hidden;
+        margin: 10px;
+        background-image:url("https://fashion.minimog.co/cdn/shop/products/14.1a_923e2467-dbba-4e11-92ef-6a73309660c0.jpg?v=1709119519&width=990") ;
+        height: 300px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .minibest7:hover{
+        overflow-x: hidden;
+        background-image: url("https://fashion.minimog.co/cdn/shop/products/14.1b_7dfad9d2-b8fd-49aa-9e87-8c2afc776a68.jpg?v=1709119519&width=360");
+        transition: 1s;
+    }
+    
+    
+    .minibest9{
+        overflow-x: hidden;
+        margin: 10px;
+        background-image:url("https://fashion.minimog.co/cdn/shop/products/22.2a.jpg?v=1708672024&width=990") ;
+        height: 300px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .minibest9:hover{
+        overflow-x: hidden;
+        background-image: url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360");
+        transition: 1s;
+    }
+
+    // ===============================ends  best sellers  ============================
+    #ShopAllProducts
+    {
+        overflow-x: hidden;
+        margin-top: 40px;
+       border: 2px solid black; 
+       width:200px ;
+       padding: 15px;
+       font-size: 20px;
+    }
+
+   
+    #ShopAllProducts:hover{
+        overflow-x: hidden;
+        border: 2px solid black; 
+        color: white;
+        background-color: black;
+        overflow-x: hidden;
+    }
+
+    #mainpershows{
+        overflow-x: hidden;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        @media(max-width:1025px)
+         {
+        flex-wrap: wrap;
+         
+        }
+        .pershows{
+            overflow-x: hidden;
+        img{
+            width: 700px;
+            height: 710px;
+            @media screen and (max-width:426px){
+                width: 100%;
+                height: 500px;
+            }
+        }
+        }
+    }
+    
+   
+    .pershows2{
+    
+      img{
+        height:710px;
+        width: 100%;
+        @media screen and (max-width:426px) {
+            width: 100%;
+            height: 500px;
+        }
+      }
+     }
+    .pershows2:hover{
+        // overflow-x: hidden;
+        transition: 1s;
+        scale: 1.8; 
+    }
+.hoi1{
+    // overflow-y: hidden;
+    overflow: hidden;
+}
+
+// ==================================start check out ==========================
+
+.mixand{
+  font-size: 40px;
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+    @media screen and (max-width:426px) {
+        
+        font-size: 30px;
+    }
+    @media screen and (max-width:375px){
+        font-size:25px ;
+    }
+    @media screen  and (max-width:321px){
+        font-size: 20px;
+    }
+        
+    }
+    
+
+.checkbag1{
+    i{
+       font-size: 40px;
+       background-color: white;
+       padding: 10px;
+       position: absolute;
+       margin-top:550px;
+       margin-left: 330px;
+       z-index: 1000;
+       overflow-x: hidden;
+
+       @media screen and (max-width:770px) {
+        margin-top:550px;
+        margin-left: 500px;
+       }
+       @media screen and (max-width:426px) {
+        margin-top:550px;
+        margin-left: 300px;
+       }
+
+       @media screen and (max-width:321px) {
+        margin-top:550px;
+        margin-left: 270px;
+        font-size: 25px;
+       }
+    }
+}
+.checkbag2{
+    overflow-x: hidden;
+    i{
+       font-size: 40px;
+       background-color: white;
+       padding: 10px;
+       position: absolute;
+       margin-top:550px;
+       margin-left: 780px;
+       z-index: 1000;
+
+       @media screen and (max-width:1026px) {
+        font-size: 40px;
+       background-color: white;
+       padding: 10px;
+       position: absolute;
+       margin-top:550px;
+       margin-left:840px;
+       z-index: 1000;
+       }
+
+        @media screen and (max-width:770px) {
+            margin-top:1230px;
+            margin-left:500px;
+        }
+        @media screen and (max-width:426px) {
+            margin-top:1230px;
+            margin-left:300px;
+        }
+        @media screen and (max-width:321px) {
+            margin-top:1230px;
+            margin-left:270px;
+            font-size: 25px;
+        }
+    }
+}
+.checkbag3{
+    overflow-x: hidden;
+    i{
+       font-size: 40px;
+       background-color: white;
+       padding: 10px;
+       position: absolute;
+       margin-top:550px;
+       margin-left: 1230px;
+       z-index: 1000;
+
+       @media screen and (max-width:1026px) {
+        margin-top:1220px;
+        margin-left: 600px;
+       }
+
+       
+       @media screen and (max-width:770px) {
+        margin-top:1900px;
+        margin-left: 500px;
+       }
+
+       @media screen and (max-width:426px) {
+        margin-top:1900px;
+        margin-left: 300px;
+       }
+
+       @media screen and (max-width:426px) {
+        margin-top:1900px;
+        margin-left: 300px;
+       }
+
+       @media screen and (max-width:321px) {
+        margin-top:1900px;
+        margin-left: 250px;
+        font-size: 25px;
+       }
+
+    }
+}
+// ===
+#maincheckout
+{
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-evenly;
+
+   div{
+    a{
+        @media screen and (max-width:376px) {
+            font-size: 15px;
+        }
+        @media screen and (max-width:321px){
+            font-size:12px ;
+        }
+    }
+   }
+    .checkmini1
+   
+    {
+        // overflow-x: hidden;
+        img{
+            width: 420px;
+       
+        }
+    }
+    .checkmini2
+    {
+        // overflow-x: hidden;
+        img{
+            width: 420px;
+           
+        }
+    }
+    .checkmini3
+    {
+        // overflow-x: hidden;
+        img{
+            width: 420px;
+           
+        }
+    }
+    div{
+        // overflow-x: hidden;
+        div{
+            margin-top: 30px    ;
+            a{
+                text-decoration: none;
+                // font-size: 15px;
+                margin-left: 25px;
+            }
+        }
+    }
+}
+// =====
+.checkmini1 {
+    // overflow-x: hidden;
+    div{
+        overflow: hidden;
+        img:hover{
+            scale: 1.1;
+            transition: scale 2s;
+        }
+    }
+}
+
+.checkmini2 {
+    // overflow-x: hidden;
+    div{
+        overflow: hidden;
+        img:hover{
+            scale: 1.1;
+            transition: scale 2s;
+        }
+    }
+}
+
+.checkmini3 {
+    // overflow-x: hidden;
+    div{
+        overflow: hidden;
+        img:hover{
+            scale: 1.1;
+            transition: scale 2s;
+        }
+    }
+}
+
+
+// ===========================start marquee===================================
+#mainmarquee{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    overflow-x: hidden;
+ 
+ 
+}
+.minimarquee1 div
+{
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    div{
+        font-size: 30px;
+    }
+}
+.minimarquee2 div
+{
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    div{
+        font-size: 30px;
+    }
+}
+.minimarquee3 div
+{
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    div{
+        font-size: 30px;
+    }
+}
+
+// ==============================ends marquee tags ============================
+
+// ============================start coastal=================================
+
+#costal{
+overflow-x: hidden;
+.minicoastal1{
+    overflow-x: hidden;
+    margin-top: 80px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:376px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width:376px) {
+        font-size: 25px;
+    }
+}
+.minicoastal2{
+    overflow-x: hidden;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+.minicoastal3{
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.minicoastal3:hover{
+    overflow-x: hidden;
+    background-color:black;
+    color:white;
+}
+}
+
+// ==
+.minicoastal2{
+    display: flex;
+    overflow-x: hidden;
+    div{
+        img{
+            width: 600px;
+            height: 80vh;
+        }
+    }
+}
+
+
+// ================================start feauture =================================
+.headingfeature
+{
+  font-size: 30px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+#Featured{
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    div{
+        img{
+            width: 180px;
+            height: 150px;
+        }
+      
+      
+    }
+}
+
+.underline1{
+    background-color:rgba(54, 49, 49, 0.699);
+    height: .1px;
+    margin-bottom: 50px;
+}
+
+
+// =========================mini follows1============================================
+
+
+.minifollowus1{
+    margin-top: 100px;
+    & div{
+        
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        @media screen and (max-width:376px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width:321px) {
+            font-size: 25px;
+        }
+    }
+    .tag143{
+     font-size: 20px;
+    }
+}
+
+.minifollowus2{
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+     .firstminflo1
+     {
+        padding-top: 20px;
+        padding-bottom: 80px;
+        margin: 10px;
+        background-image:url("https://fashion.minimog.co/cdn/shop/products/22.2a.jpg?v=1708672024&width=990") ;
+        height: 200px;
+        width: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+   }
+   .firstminflo1:hover{
+    background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    overflow-x: hidden;
+        }
+        
+        .firstminflo1 div{
+            overflow: hidden;
+        }
+}
+
+
+.firstminflo2
+     {
+        padding-top: 20px;
+        padding-bottom: 80px;
+        margin: 10px;
+        background-image:url("https://fashion.minimog.co/cdn/shop/products/2.1a.jpg?v=1708671658&width=823") ;
+        height: 200px;
+        width: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+   }
+   .firstminflo2:hover{
+    background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    overflow-x: hidden;
+        }
+        
+        .firstminflo2 div{
+            overflow: hidden;
+        }
+
+
+        .firstminflo3
+     {
+        padding-top: 20px;
+        padding-bottom: 80px;
+        margin: 10px;
+        background-image:url("https://fashion.minimog.co/cdn/shop/products/7.1a.jpg?v=1708671676&width=990") ;
+        height: 200px;
+        width: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+   }
+   .firstminflo3:hover{
+    background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    overflow-x: hidden;
+        }
+        
+        .firstminflo3 div{
+            overflow: hidden;
+        }
+
+
+        .firstminflo4
+        {
+           padding-top: 20px;
+           padding-bottom: 80px;
+           margin: 10px;
+           background-image:url("https://fashion.minimog.co/cdn/shop/products/14.1a_923e2467-dbba-4e11-92ef-6a73309660c0.jpg?v=1709119519&width=990") ;
+           height: 200px;
+           width: 250px;
+           background-repeat: no-repeat;
+           background-size: cover;
+           overflow-x: hidden;
+      }
+      .firstminflo4:hover{
+       background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       transition: 1s;
+       overflow-x: hidden;
+           }
+           
+           .firstminflo4 div{
+               overflow: hidden;
+           }
+   
+   
+           .firstminflo5
+           {
+              padding-top: 20px;
+              padding-bottom: 80px;
+              margin: 10px;
+              background-image:url("https://fashion.minimog.co/cdn/shop/products/22.1b.jpg?v=1708672024&width=360") ;
+              height: 200px;
+              width: 250px;
+              background-repeat: no-repeat;
+              background-size: cover;
+              overflow-x: hidden;
+         }
+         .firstminflo5:hover{
+          background-image: url("https://www.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: 1s;
+          overflow-x: hidden;
+              }
+              
+              .firstminflo5 div{
+                  overflow: hidden;
+              }
+   //===========================================================================
+   
+   //===========================================start footer ===================
+   #footer{
+    overflow-x: hidden;
+    margin-top: 90px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    padding-bottom: 50px;
+    align-items: center;
+   } 
+
+   .minifooter1{
+    & div {
+        a{
+            font-size: 40px;
+            text-decoration: none;
+            margin-bottom: 40px;
+        }
+    }
+    & div{
+        font-size: 20px;
+        padding-top: 30px;
+    }
+    & div{
+        input{
+            padding: 20px;
+        }
+        input::placeholder{
+            font-size: 20px;
+        }
+    }
+    .Subscribe{
+         
+            a{
+                font-size: 20px;
+                border: 2px solid black;
+                padding: 10px;
+                color: white;
+                background-color: black;
+                border-radius: 10px;
+
+            }
+            a:hover{
+                background-color: white;
+                color:black;
+            }
+    }
+
+   }
+.minifooter2{
+    .Quick{
+        padding-bottom:10px ;
+        a{
+           margin-top: 90px;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 800;
+        }
+    }
+    & div{
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.minifooter3{
+   margin-top: 40px;
+    .companyh{
+       padding-bottom: 10px;
+      a{
+        font-size: 20px;
+        font-weight: 800;
+        text-decoration: none;
+      }  
+      
+    }
+    & div{
+        a{
+            text-decoration: none;
+            
+        }
+    }
+}
+      
+.minifooter4{
+   .ourstore{
+    margin-top: 25px;
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 800;
+    }
+   }
+   & div{
+    a{
+        i{
+            margin: 6px;
+            font-size: 20px;
+        }
+    }
+   }
+}
+      
+
+
+
+// // ========================================
+// #demo{
+//     background-color: red;
+//     padding: 40px;
+//     .minidemo{
+//         margin-left: 150px;
+//         background-image: url("https://fashion.minimog.co/cdn/shop/products/2.1a.jpg?v=1708671658&width=990");
+//         height: 300px;
+//         width: 200px;
+//         overflow: hidden;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+
+//         .miniicons1h{
+//             background-color:rgb(231, 213, 213);
+//             display: none;
+//             width: 20px;
+//             height: 20px;
+//             padding: 10px;
+//             border-radius: 50%;
+//             position: relative;
+//             top:10px;
+//             left: 150px;
+//             i{
+//                 font-size: 20px;
+//                 color:black;
+//             }
+            
+//         }
+//         .miniicons1h:hover{
+//             background-color: black;
+//             i{
+//                 color:white;
+//             }
+//         }
+
+//         .miniicons2h{
+//             background-color:rgb(231, 213, 213);
+//             display: none;
+//             width: 20px;
+//             height: 20px;
+//             padding: 10px;
+//             border-radius: 50%;
+//             position: relative;
+//             top:20px;
+//             left: 150px;
+
+//             i{
+//                 font-size: 20px;
+//                 color:black;
+//             }
+            
+//         }
+//         .miniicons2h:hover{
+//             background-color: black;
+//             i{
+//                 color:white;
+//             }
+//         }
+    
+//         .select{
+//                border: 2px solid black;
+//                display:none;
+//                padding: 10px;
+//                position: relative;
+//                top:220px;
+//                left: 50px;
+             
+//                a{
+//                 text-decoration: none;
+//                }
+//         }
+//         .select:hover{
+//             background-color: black;
+//            a{
+//             color: white;
+//            }
+
+//         }
+//     }
+//     .minidemo:hover{
+//       background-image: url("https://fashion.minimog.co/cdn/shop/products/2.1b.jpg?v=1708671658&width=990");
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       overflow: hidden;
+//       transition: 1.2s;
+       
+      
+//       & .select{
+//         display: inline-block;
+//       }
+
+//       & .miniicons1h{
+//         display: inline-block;
+//       }
+
+//       & .miniicons2h{
+//         display: inline-block;
+//       }
+//     }
+  
+// }
